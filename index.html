@@ -1,46 +1,473 @@
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>HTML Example</title>
-  
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/about.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>JT HOUSE</title>
+
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="assets/css/leadmark.css">
 </head>
-<body>
-  <section class="center">
-    <aside class="sidebar"></aside>
-    
-    <section class="contents">
-      <!-- page will be include here -->
-      <section id="page" class="page">
-        <section id="about">
-          <section class="frame">
-            <h2><b>HELLO</b>WORLD</h2>
-            
-            <div class="cat">
-              <div class="picture">
-                <img src="images/mew.png" alt="Mew">
-              </div>
-              <small>Mew</small>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">제이티 업무</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">작업일지</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Notice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testmonial">서비스후기</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="ml-4 nav-link btn btn-primary btn-sm rounded">빠른문의</a>
+                    </li>
+                </ul>
             </div>
-            <div class="cat">
-              <div class="picture">
-                <img src="images/siesta.png" alt="Siesta">
-              </div>
-              <small>Siesta</small>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h1 class="subtitle" style=" z-index: 99;">건축 사진&영상 전문</h1>
+            <h1 class="title" style="text-align: center; line-height: 140%; z-index: 99;">JT를 찾아주셔서 <br> 감사합니다!</h1>  
+            <video autoplay loop muted src="assets/imgs/main.mp4" 
+            style="display:block; position: absolute; opacity: 40%;">
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- Service Section -->
+    <section  id="service" class="section pt-0">
+        <div class="container">
+            <h6 class="section-title text-center" style="color: orange;"><img src="assets/imgs/CAMERA.png" style="width: 10%; height: auto; margin-top: 13px ;"> </h6>
+            <h6 class="section-subtitle text-center mb-5 pb-3" style="line-height: 33px; font-size:larger; font-weight: 600;">제이티는 <mark style="background-color:rgb(255, 211, 68);">건축전문 촬영 스튜디오</mark>로 <br> 공간을 기록하고 소개하는 일을 합니다. </h6>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">01</small>
+                            <h5 class="card-title mt-3">사진촬영</h5>
+                            <p class="mb-0">건축주의 마음을 사로잡는 사진 촬영<br></p>
+                            <p class="mb-0"><br></p>
+                            <img src="assets/imgs/pic01.png" style="width: 100%; height: auto; margin-top: 13px ;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">02</small>
+                            <h5 class="card-title mt-3">영상촬영</h5>
+                            <p class="mb-0"> 숏폼, 유튜브, 인터뷰 등 <BR> 건축전문 영상이라면 모두 가능해요! </p>  
+                            <p style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 13px; margin-bottom: 0;">
+                                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/LiE1o-1M0FM" title="300만 달러를 들여서 한국에 카페를 짓는다면 (A large $3,000,000 cafe, a cafe that Asian people go to)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body" style="margin-bottom: 0;">
+                            <small class="text-primary font-weight-bold">03</small>
+                            <h5 class="card-title mt-3">블로그 운영</h5>
+                            <p class="mb-0">좋은 사진, 영상 찍긴 했는데... <BR> SNS에 하나하나 올리는건 귀찮은 일이죠. <BR> 제이티는 촬영본들을 한번에 관리하며 <br> 블로그 발행까지 도와드리고 있어요. </p>
+                            <img src="assets/imgs/blog03.png" style="width: 100%; height: auto; margin-top: 20px; ">
+                        </div>
+                    </div>
+                </div>              
+
             </div>
-            <div class="cat">
-              <div class="picture">
-                <img src="images/tiger.png" alt="Tiger">
-              </div>
-              <small>Tiger</small>
-            </div>
-          </section>
-        </section>
-      </section>
+        
+        </div>
     </section>
-  </section>
+    <!-- End OF Service Section -->
+
+    <!-- About Section -->
+    <section class="section" id="about" style="padding: 50px 0 ;">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pr-md-5 mb-md-0" style="margin-bottom: 4px;">
+                    <h6 class="section-title mb-0" style="color: darkorange; font-weight: 900;">●</h6>
+                    <h6 class="section-title mb-0" style="line-height: 135%;">공간에 대한 이해도 높은<br> 목적성에 맞는 사진</h6>
+                    <img src="assets/imgs/pic04.png" class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row" style="margin-right: -10px; margin-left: -10px;">
+                        <div class="col-6" style="padding-right: 5px;">
+                            <img src="assets/imgs/top01.jpg" alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-6" style="padding-left: 5px;">
+                            <img src="assets/imgs/top02.jpg" alt="" class="w-100 shadow-sm">
+                        </div>
+
+                       
+                        <div class="col-12 mt-4"  style="color: #000000; ">
+                            <p style="color: orange; font-weight:bold; font-size:smaller;"><br>Specialized Photograph of Space</p>
+                            <p><br>제이티는 다년간 공간촬영만을 고집해온<br><b>건축사진 전문 스튜디오</b>입니다. <br><br> 각 공간에 맞는 사진으로 <br>전문가들이 알아서 척척 찍어드려요. </p>
+                            <p>오롯이 '본업'에만 신경쓰세요! <br> 나머지는 말만 해주시면 척척 해결해드릴게요. :) </p>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </section>
+    <!-- End OF About Section -->
+
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h6 class="section-subtitle text-center" style="margin-bottom: 5PX; color: orange; font-size: medium; ">JT ARTWORKS</h6>
+            <h6 class="section-title text-center">제이티 작업일지</h6>
+            <h6 class="section-subtitle mb-5 text-center" style="color: #808a91;">• • •<br><br>실제 제이티의 작업물을 보고 결정해보세요.</h6>
+            <div class="filters">
+                <a href="#" data-filter=".new" class="active">
+                    all
+                </a>
+                <a href="#" data-filter=".advertising" style="white-space : nowrap;">
+                    건물 외관 촬영
+                </a>
+                <a href="#" data-filter=".branding" style="white-space : nowrap;">
+                    내부 인테리어 촬영
+                </a>
+                
+            </div>
+            
+
+
+            <div class="portfolio-container"> 
+
+                <div class="col-md-6 col-lg-4 advertising new " id="showpic01">
+                    <div class="portfolio-item ">
+                        <img src="assets/imgs/pic09.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                        <div class="content-holder ">
+                            <a class="img-popup" href=""></a>
+                            <div class="text-holder  ">
+                                <h6 class="title">세종 라포르테</h6>
+                                <p class="subtitle">2024.04.19</p>
+                            </div>
+                        </div>    
+                    </div>              
+                </div> 
+
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/pic08.png" class="img-fluid">       
+                       <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/pic08.png"></a>
+                            <div class="text-holder">
+                                <h6 class="title">청주 폴라그란데</h6>
+                                <p class="subtitle">2024.04.19</p>
+                            </div>
+                        </div>
+                    </div>                                                       
+                </div> 
+                <div class="col-md-6 col-lg-4 advertising new"> 
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/pic06.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">용인 라임그라스</h6>
+                                <p class="subtitle">2024.04.19</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/pic02.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">용인 전원주택</h6>
+                                <p class="subtitle">2024.04.19</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/pic07.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">세종 라포르테</h6>
+                                <p class="subtitle">2024.04.19</p>
+                            </div>
+                        </div>
+                    </div>                                                    
+                </div> 
+
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/pic05.png" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">양평 전원주택</h6>
+                                <p class="subtitle">2024.04.19</p>
+                            </div>
+                        </div>
+                    </div>                                                    
+                </div> 
+
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/inte.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">카페 인테리어 촬영</h6>
+                                <p class="subtitle">2024.04.19</p>
+                            </div>
+                        </div>
+                    </div>                                                    
+                </div> 
+
+            </div>   
+        </div>            
+    </section>
+    <!-- End of portfolio section -->
+
+    
+
+    <!-- Blog Section -->
+    <section class="section" id="blog" style="padding: 40px 0 ;">
+        <div class="container">
+            <h6 class="section-title mb-0 text-center" style="padding-bottom: 30px;">NOTICE</h6>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/notice01.png" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title"><B>더 많은 작업물이 궁금하시다면</B></h6>
+                            <p></p>
+                            <a href="javascript:void(0)" class="small text-muted">▶ JT BLOG </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/notice02.png" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title"><B>제이티 이용방법 </B></h5>
+                            <p></p>
+                            <a href="javascript:void(0)" class="small text-muted">▶ 비용 및 이용절차</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/notice03.png" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">EVENT</h6>
+                            <p></p>
+                            <a href="javascript:void(0)" class="small text-muted">▶ 이벤트 및 공지사항</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Blog Section -->
+
+    <!-- Testmonial Section -->
+    <section class="section" id="testmonial">
+        <div class="container" style="margin-bottom: 20px;">
+            <h6 class="section-title text-center mb-0">서비스후기</h6>
+            <h6 class="section-subtitle mb-5 text-center" style="color:#808a91;">실제 제이티의 서비스를 받아본 시공사들의 후기입니다.</h6>
+            <div class="row" style="flex-wrap:nowrap; max-width:100%; overflow-x: auto">
+
+                <div class="col-md-4 my-3 my-md-0" style="min-width: 400px; " >
+                    <div class="card" >
+                        <div class="card-body" >
+                            <div class="media align-items-center mb-3">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">모****</h6>
+                                    <small class="text-muted mb-0">인테리어 시공사</small>     
+                                </div>
+                            </div>
+                            <p class="mb-0">
+
+                                사진을 찍을때 제가 현장에 있는게 아니어서 소통하는데 많이 어려울줄 알았는데 <br>
+                                작가님이 소통해주시려고 노력해주시고 신경써주시는 덕분에 별 어려움없이 진행됬었습니다:) <br><br>
+                                그리고 작가님께서 성격도 밝고 좋으셔서 전화기너머로 전화받는 저까지 기분이 좋더라구요. <br>
+                                소통이 잘되서 좋은 결과물을 얻고싶은 고객분께서는 제이티하우스에 김바다 작가님을 찾아주세요!
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-3 my-md-0" style="min-width: 400px; " >
+                    <div class="card" >
+                        <div class="card-body" >
+                            <div class="media align-items-center mb-3">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">솔**</h6>
+                                    <small class="text-muted mb-0">모델하우스 건설업체</small>     
+                                </div>
+                            </div>
+                            <p class="mb-0">
+                                
+                                1. 급한 일정이었는데 불구하고 조율해주셨습니다.<br>
+                                2. 촬영 전 작가님과 상의가 가능했고 친절하게 대응해주십니다. (ex.원하는 구도, 조명 등) <br>
+                                3. 결과물이 빠르게 도착해서 좋습니다.
+                                <br><br>
+                                다음에도 이용하려고 합니다. 감사합니다.
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-3 my-md-0" style="min-width: 400px; " >
+                    <div class="card" >
+                        <div class="card-body" >
+                            <div class="media align-items-center mb-3">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">사***</h6>
+                                    <small class="text-muted mb-0">건축업체</small>     
+                                </div>
+                            </div>
+                            <p class="mb-0">
+                                
+                                지난 번에 작업을 너무 정성스럽게 해주셔서 다시 촬영건이 있어 의뢰드렸습니다. <br>
+                                어시스턴트 분과 함께 오셔서 욕심 내서 사진 엄청 많이 찍어주셨어요. <br>
+                                의사소통도 잘 되고, 알아서 구도 잡고 잘 찍어주십니다. <br>
+                                작업물 퀼리티가 너무 맘에 들어요. 역시 전문가는 다르네요.  
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-3 my-md-0" style="min-width: 400px; " >
+                    <div class="card" >
+                        <div class="card-body" >
+                            <div class="media align-items-center mb-3">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">**스토어 용인처인 </h6>
+                                    <small class="text-muted mb-0"> 대형 가전매장 </small>     
+                                </div>
+                            </div>
+                            <p class="mb-0">
+
+                                인테리어 공사 과정에서 자꾸만 예기치 못한 문제들이 생겨서 작업 일정을 두 번 정도 미뤘음에도 불구하고 <br>
+                                친절하게 조율해주셔서 너무 감사했습니다. 작업하실 때에도 원하는 방향을 말씀드리면 최대한 반영해서 촬영해주셨고, <br>
+                                어떤게 더 나을지 함께 고민하시면서 렌즈와 구도 모두 여러번 바꿔가며 촬영해주시는데 정말 감동이었습니다. <br>
+                                최대한 매장이 예쁘게 보일 수 있도록, 구석구석 놓치는 부분 없도록 신경써주시고 여러번 살펴봐주셔서 감사했어요.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Testmonial Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 my-3">
+                    <h6 class="mb-0">Phone</h6>
+                    <p class="mb-4">010 - 4882 - 8414 </p>
+
+                    <h6 class="mb-0">Address</h6>
+                    <p class="mb-4">세종특별자치시 집현중앙7로 6</p>
+
+                    <h6 class="mb-0">Email</h6>
+                    <p class="mb-0">jthouse1104@naver.com</p>
+                    <p></p>
+                </div>
+                <div class="col-md-7">
+                    <form class="gform" method="POST" onsubmit="submitFixedForm(event)">
+                        <h4 class="mb-4">빠른 문의 <br> ↓</h4>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <input type="text" class="form-control text-white rounded-0 bg-transparent" id="client_name" name="상호명" placeholder="상호명">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="email" class="form-control text-white rounded-0 bg-transparent" id="client_email" name="Email" placeholder="Email">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea id="client_detail" name="message" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="희망 촬영 주소지, 촬영 일자, 용도 등 희망사항을 얘기해 주세요.  :D "></textarea>
+                            </div>
+                            <div class="form-group col-12 mb-0">
+                                <button type="submit" id="consultation_submit" class="btn btn-primary rounded w-md mt-3">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <p class="mb-0 small"> </p>     
+            </footer>
+            <!-- End of Page Footer -->  
+        </div>
+    </section>
+	
+
+
+    
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- LeadMark js -->
+    <script src="assets/js/leadmark.js"></script>
+    <script src="formHandler.js"></script>
 </body>
 </html>
+
+
+
