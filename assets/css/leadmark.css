@@ -11502,7 +11502,7 @@ textarea.form-control {
 }
 
 .header.components-header .title {
-  font-size: calc(40px + (90 - 40) * ((100vw - 320px) / (1200 - 320)));
+  font-size: calc(100% - 60px);
   font-weight: bold;
   margin-top: -8%;
 }
